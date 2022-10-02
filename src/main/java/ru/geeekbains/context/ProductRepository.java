@@ -42,5 +42,10 @@ public class ProductRepository {
         products.add(product);
     }
 
+    public void removeProductbyId (Long id)
+    {
+        products.remove(products.stream().filter(p -> p.getId().equals(id)).findFirst().orElseThrow());
+    }
+
 
 }

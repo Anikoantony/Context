@@ -36,5 +36,10 @@ public class Cart {
         productRepository.adProduct(product);
     }
 
+    public void removeProduct(Long id)
+    {
+        productRepository.removeProductbyId(id);
+    }
+
 
 }

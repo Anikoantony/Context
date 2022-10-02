@@ -19,6 +19,9 @@ public class MainApp {
 
         Cart cart2 =context.getBean(Cart.class);
         cart2.getProducts();
+        cart2.removeProduct(1L);
+        cart2.getProducts();
+
 
 
         //context берется из packages
